@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+     margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: black;
+    --sec-text-color: rgb(59, 52, 52);
+    --accent-color: rgb(146, 6, 188);
+    --accent-dark:rgb(71, 3, 71);
+
+
+}
+body{
+    color:var(--primary-text-color);
+    font-family:"poppins", sans-serif;
+}
+p{
+    font-family:"Roboto",sans-serif;
+    color:var(--sec-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    overflow:hidden;
+}
+nav{
+    background-color:  rgb(247, 199, 199);
+    box-shadow:0 0 4px ;
+    position: fixed;
+    top:0;
+    z-index:99;
+    left:0;
+    right:0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 5px;
+}
+.news img{
+    width: 120px;
+
+}
+
+.nav-links ul{
+    gap:16px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color:rgb(130, 14, 14);
+}
+.nav-item.active{
+    color:rgb(130, 14, 14);
+}
+.search-bar{
+    height:32px;
+    gap:8px;
+    
+}
+.news-input{
+    width:200px;
+    height:100%;
+    padding-inline: 12px;
+    border-radius:4px;
+    border:2px solid black;
+    font-family:"Roboto",sans-serif;
+}
+.search-button{
+    background-color:rgb(241, 77, 36) ;
+    color:white;
+    padding: 8px 24px;
+    border:none;
+    border-radius: 4px ;
+    cursor:pointer;
+    font-family:"Roboto",sans-serif;
+
+}
+.search-button:hover{
+    background-color: rgb(117, 6, 6);
+}main{
+    padding-block: 20px;
+    margin-top:100px;
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+
+}
+.crd{
+    width:360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    transition:all 0.3s ease;
+}
+.crd:hover{
+    box-shadow: 1px 1px 8px rgb(81, 56, 56);
+    background-color: rgb(253, 230, 230);
+    transform: translateY(-2px);
+
+}
+.crd-header img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+}
+.crd-content{
+    padding: 12px;
+
+}
+.source{
+    margin-block: 12px;
+    
+}

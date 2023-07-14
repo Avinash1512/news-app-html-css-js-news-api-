@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#"onclick="reload()"class="news">
+                <img src="images (16).jpeg" alt="news">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item"id="india"onclick="onNavItemClick('india')">India</li>
+                    <li class="hover-link nav-item"id="Finance"onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="hover-link nav-item"id="Astrology"onclick="onNavItemClick('Astrology')">Astrology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="news-input" type="text" class="news-input" placeholder="e.g. technology">
+                <button id="search-btn" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="crd">
+            <div class="crd-header">
+                <img src="https://via.placeholder.com/400x200" alt="newsimg" id="newsimg" srcset="">
+            </div>
+            <div class="crd-content">
+                <h3 id="title">this is title</h3>
+                <h6 class="source" id="source">end gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptates, nemo nam numquam accusantium voluptate reiciendis possimus incidunt dolor est.</p>
+            </div>
+        </div>
+    </template>
+    <script src="logic.js"></script>  
+</body>
+</html>
